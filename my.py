@@ -9,7 +9,7 @@
 # It would be even better to get the current year automatically
 
 import datetime
-from urllib.parse import uses_fragment
+
 
 user_name = input("What is your name?  ")
 
@@ -18,6 +18,4 @@ target_age = 100
 diff_age = target_age - int(uses_age)
 current_year = datetime.datetime.now().year
 print(f"You will be 100 after {diff_age} years.")
-
-
 print(f"You will be 100 years old in {diff_age + current_year}.")
