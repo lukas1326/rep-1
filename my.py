@@ -13,9 +13,9 @@ import datetime
 
 user_name = input("What is your name?  ")
 
-uses_age = input(f"How old are you, {user_name}?  ")
+user_age = input(f"How old are you, {user_name}?  ")
 target_age = 100
-diff_age = target_age - int(uses_age)
+diff_age = target_age - int(user_age)
 current_year = datetime.datetime.now().year
 print(f"You will be 100 after {diff_age} years.")
 print(f"You will be 100 years old in {diff_age + current_year}.")
