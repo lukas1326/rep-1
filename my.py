@@ -17,5 +17,5 @@ user_age = input(f"How old are you, {user_name}?  ")
 target_age = 100
 diff_age = target_age - int(user_age)
 current_year = datetime.datetime.now().year
-print(f"You will be 100 after {diff_age} years.")
+print(f"You will be {target_age} after {diff_age} years.")
 print(f"You will be {target_age} years old in {diff_age + current_year}.")
