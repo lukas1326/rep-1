@@ -14,4 +14,6 @@ user_name = input("What is your name?  ")
 
 user_age = input(f"How old are you, {user_name}?  ")
 
-print(f"You will have 100 years in {100 - int(user_age) + datetime.datetime.now().year}.")
+print(f"You will be 100 after {100-int(user_age)} years.")
+
+print(f"You will be 100 years old in {100 - int(user_age) + datetime.datetime.now().year}.")
