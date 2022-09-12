@@ -14,7 +14,8 @@
 sal = float(input('Your salary is  :')) 
 period = float(input('How many years have you been working here? '))
 bonus_rate=0.15
-if period >=2:
-    print(f'{period} years of experience,{sal} Euro salary, the bonus will be {(sal)*bonus_rate *(period-2)}')
+work_years  = 2
+if period >=work_years:
+    print(f'{period} years of experience,{sal} Euro salary, the bonus will be {(sal)*bonus_rate *(period-work_years)}')
 else:
     print(f'{period} years of experience,{sal} Euro salary, no bonus(0)')
