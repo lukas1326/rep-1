@@ -15,8 +15,8 @@
 # output: Not all characters are in the second string
 import string
 
-name_one = input("Enter name one: ")
-name_two = input("Enter name two: ")
+name_one = input("Enter name one: ").lower()
+name_two = input("Enter name two: ").lower()
 
 
 if all(elem in name_two  for elem in name_one):
