@@ -18,11 +18,7 @@
 
 def is_palindrome(some_text):
     format_text = some_text.lower().replace(" ","")
-    if format_text==format_text[::-1]:
-        result=True
-    else:
-        result=False
-    return result
+    return format_text==format_text[::-1]
 
 my_text  = input("Input text: ")
 print(is_palindrome(my_text))
