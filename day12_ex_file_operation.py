@@ -58,13 +58,19 @@ save_lines(destpath, lines_pure)
 
 # then function will save the cleaned text into destpath
 # clean_punkts("pure_sherlock.txt", "clean_sherlock.txt")
+import string
 def clean_punkts(srcpath, destpath):
     with open(srcpath, encoding="utf-8") as fin, open(destpath, mode="w", encoding="utf-8") as fout:
-        for line in fin:  # for each line in incoming file
-            if line[0] == "\n": # if line starts with "\n" means it is is just one character line
-                fout.write("*"*40+"\n")
-            else:
-                fout.write(line.upper()) # keeping also the newlines
+        for line in fin:
+            for character in line:
+                if character in string.punctuation:
+                    line = line.replace(character, '') 
+                    
+                
+            fout.write(line)
+srcpath='sherlock_holmes_adventures.txt'
+clean_punkts(srcpath, destpath)
+           
 # 1f -> write the function get_word_usage(srcpath, destpath)
 
 # The function opens the file and finds the most frequently used words
