@@ -21,6 +21,8 @@ def get_shuffled_cards():
         random.shuffle(list_numbers)
         return list_numbers
 
+print(get_shuffled_cards())
+
 
 
 # 2. Deck - probably for homework, see how far you get
